@@ -1,26 +1,17 @@
-import { useState } from 'react'
+import React from 'react'
+import Navbar from './components/Navbar'
+import SideNav from './components/SideNav'
+import Chat from './components/Chat'
 import './App.css'
 
-function App() {
-  function handleClick() {
-  
-  }
+const App = () => {
   return (
-   
-      <>
-      <div>
-        <img 
-          src="src/assets/my, me Logo.jpg" 
-          className="my-me" 
-          alt="my-me-logo" 
-          onClick={handleClick} 
-        />
-      </div>
-      <p className="copyright">
-        © 2024 Hassvanee Samaae
-      </p>
-    </>
-  
+    <div className='flex'>
+      <Navbar />
+      <SideNav />
+      <Chat />
+
+    </div>
   )
 }
 
